@@ -1217,6 +1217,29 @@ blockquote em {
     display: block;
   }
 
+   
+/* Scroll reveal animation controlled by main.js */
+.will-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.will-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .will-reveal,
+  .will-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
   .main-nav {
     position: absolute;
     top: 100%;
@@ -1462,7 +1485,6 @@ blockquote em {
     height: 240px;
   }
 }
-
 /* RESPECT ACCESSIBILITY PREFERENCES */
 
 @media (prefers-reduced-motion: reduce) {
