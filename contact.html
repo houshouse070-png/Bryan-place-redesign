@@ -1,150 +1,152 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact page redesign concept for Bryan Place.">
-  <title>Contact | Bryan Place</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact & Location | Bryan Place</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="concept-banner">
-    Independent redesign concept · Not the official Bryan Place website
-  </div>
+<div class="top-note">A HISTORIC ZANESVILLE DESTINATION · INDEPENDENT REDESIGN CONCEPT</div>
 
-  <header class="site-header">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">B</span>
-      <span>BRYAN <em>PLACE</em></span>
-    </a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html">Bryan Place<small>Zanesville · Ohio</small></a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="brunch.html">Brunch</a>
+<a href="events.html">Gatherings</a>
+<a href="interiors.html">Interiors</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="nav-actions"><button class="btn small" data-open-booking>Book a table</button></div>
+</div>
+</header>
 
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span>
-    </button>
+<main>
+<section class="page-hero">
+<div class="container">
+<span class="eyebrow">We'd love to hear from you</span>
+<h1>Let's make a plan.</h1>
+<p>Find the location details and contact the team about your visit or event.</p>
+</div>
+</section>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="brunch.html">Brunch</a>
-      <a href="events.html">Gatherings</a>
-      <a href="interiors.html">Interiors</a>
-      <a class="nav-cta active" href="contact.html">Get in touch ↗</a>
-    </nav>
-  </header>
+<section class="section">
+<div class="container contact-grid">
+<div>
+<span class="eyebrow">Visit Bryan Place</span>
+<h2>Find us in Zanesville.</h2>
+<div class="contact-detail">
+<strong>Address</strong>
+<p>49 North 6th Street<br>Zanesville, Ohio 43701, USA</p>
+</div>
+<div class="contact-detail">
+<strong>Telephone</strong>
+<p><a href="tel:+17404508008">(740) 450-8008</a></p>
+</div>
+<div class="contact-detail">
+<strong>Sunday brunch</strong>
+<p>10:30 AM – 2:00 PM</p>
+</div>
+<div class="notice">Please verify the address, phone number and current opening hours with Bryan Place before travelling.</div>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=49+North+6th+Street+Zanesville+Ohio" target="_blank" rel="noopener">View map ↗</a>
+</div>
 
-  <main>
-    <section class="page-hero contact-hero">
-      <div class="hero-shade"></div>
-      <div class="page-hero-content reveal">
-        <p class="eyebrow light">LET'S START A CONVERSATION</p>
-        <h1>Something<br>on your <i>mind?</i></h1>
-        <p>Tell us what you're planning, and explore the next step.</p>
-      </div>
-    </section>
+<div class="contact-card">
+<span class="eyebrow">Send an enquiry</span>
+<h2>How can we help?</h2>
+<p class="muted">This sample contact form is a front-end demonstration. It does not transmit messages.</p>
+<form id="contactForm">
+<div class="field">
+<label for="contactName">Your name</label>
+<input id="contactName" required placeholder="Full name">
+</div>
+<div class="field">
+<label for="contactEmail">Email address</label>
+<input id="contactEmail" type="email" required placeholder="you@example.com">
+</div>
+<div class="field">
+<label for="contactSubject">What is your enquiry about?</label>
+<select id="contactSubject" required>
+<option value="">Choose a subject</option>
+<option>Dining</option>
+<option>Sunday brunch</option>
+<option>Private event</option>
+<option>General enquiry</option>
+</select>
+</div>
+<div class="field">
+<label for="contactMessage">Message</label>
+<textarea id="contactMessage" required placeholder="Write your message..."></textarea>
+</div>
+<button class="btn" type="submit">Prepare message</button>
+<p id="contactFeedback" class="form-feedback" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</section>
+</main>
 
-    <section class="contact-layout section-pad">
-      <div class="contact-copy">
-        <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
-        <h2>Every good thing<br>starts <i>somewhere.</i></h2>
-        <p>
-          Have a question about brunch, a possible gathering, or an interior
-          design enquiry? Use the form to outline what you have in mind.
-        </p>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div><a class="brand" href="index.html">Bryan Place<small>Zanesville · Ohio</small></a><p>A place for good food, shared occasions and memorable surroundings.</p></div>
+<div><h4>Explore</h4><div class="footer-links"><a href="brunch.html">Sunday brunch</a><a href="events.html">Private gatherings</a><a href="interiors.html">Interiors & gallery</a><a href="contact.html">Contact & location</a></div></div>
+<div><h4>Find us</h4><p>49 North 6th Street<br>Zanesville, Ohio 43701</p><p><a href="tel:+17404508008">(740) 450-8008</a></p></div>
+</div>
+<div class="footer-bottom"><span>© <span data-year></span> Bryan Place · Independent redesign concept</span><span class="developer-credit">Designed & Developed by Jeyyy · <a href="https://wa.me/2347035960615" target="_blank" rel="noopener">WhatsApp: +234 703 596 0615</a></span></div>
+<p class="disclaimer">Independent portfolio concept, not the official Bryan Place website. Interactive tools are demonstrations only.</p>
+</div>
+</footer>
 
-        <div class="contact-detail">
-          <span>01</span>
-          <div>
-            <h3>Brunch & dining</h3>
-            <p>Ask about current menus, opening hours, and reservations.</p>
-          </div>
-        </div>
+<button class="chat-launch" id="chatToggle">Ask Bryan Place ↗</button>
+<section class="chat-panel" id="chatPanel">
+<div class="chat-head"><strong>Ask Bryan Place</strong><button id="chatClose">×</button></div>
+<div class="chat-body" id="chatBody"></div>
+<div class="chat-options">
+<button data-question="What are your brunch hours?">Brunch hours</button>
+<button data-question="How do I plan an event?">Plan an event</button>
+<button data-question="Where are you located?">Location</button>
+</div>
+<div class="chat-input"><input id="chatInput" placeholder="Ask a question…"><button id="chatSend">Send</button></div>
+</section>
 
-        <div class="contact-detail">
-          <span>02</span>
-          <div>
-            <h3>Events & gatherings</h3>
-            <p>Share your preferred date, occasion, and estimated guest count.</p>
-          </div>
-        </div>
+<div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+<div class="modal">
+<button class="modal-close" data-close-booking>×</button>
+<div id="bookingFormFields">
+<span class="step-indicator" id="bookingStepLabel">Step 1 of 3</span><h2 id="bookingTitle">Request a table</h2>
+<form id="bookingForm">
+<div class="modal-step active" data-step="1">
+<p class="muted">When would you like to visit?</p>
+<div class="field"><label for="bookDate">Preferred date</label><input id="bookDate" name="date" type="date" required></div>
+<div class="field"><label for="bookTime">Preferred time</label><select id="bookTime" name="time" required><option value="">Choose a time</option><option>10:30 AM</option><option>11:00 AM</option><option>11:30 AM</option><option>12:00 PM</option><option>12:30 PM</option><option>1:00 PM</option><option>1:30 PM</option><option>2:00 PM</option><option>Other / flexible</option></select></div>
+</div>
+<div class="modal-step" data-step="2">
+<p class="muted">How many guests?</p>
+<div class="field"><label for="bookGuests">Number of guests</label><select id="bookGuests" name="guests" required><option value="">Select guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9+</option></select></div>
+<div class="field"><label for="bookNotes">Additional notes</label><textarea id="bookNotes" name="notes"></textarea></div>
+</div>
+<div class="modal-step" data-step="3">
+<p class="muted">How can the restaurant reach you?</p>
+<div class="field"><label for="bookName">Your name</label><input id="bookName" name="name" required></div>
+<div class="field"><label for="bookContact">Phone or email</label><input id="bookContact" name="contact" required></div>
+</div>
+</form>
+<div class="modal-actions"><button class="btn outline" id="bookingBack" type="button">Back</button><button class="btn" id="bookingNext" type="button">Continue</button></div>
+</div>
+<div id="bookingResult" hidden>
+<span class="eyebrow">Request prepared</span><h2>Your details are ready.</h2>
+<p class="muted">This demo does not send or confirm a reservation. Contact the restaurant directly to check availability.</p>
+<div class="result-card"><pre id="bookingSummary"></pre></div>
+<div class="modal-actions"><button class="btn outline" id="bookingReset">Start again</button><button class="btn" id="copyBooking">Copy request</button><button class="btn gold" id="callRestaurant">Call restaurant</button></div>
+</div>
+</div>
+</div>
 
-        <div class="contact-detail">
-          <span>03</span>
-          <div>
-            <h3>Interiors & design</h3>
-            <p>Ask about furniture, products, or design consultations.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form-wrap">
-        <p class="eyebrow">YOUR ENQUIRY</p>
-        <h3>Let's talk details.</h3>
-
-        <form class="contact-form" id="contact-form">
-          <label for="name">Your name</label>
-          <input id="name" name="name" type="text" placeholder="Full name" required>
-
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
-
-          <label for="topic">What are you enquiring about?</label>
-          <select id="topic" name="topic" required>
-            <option value="">Choose a topic</option>
-            <option value="Brunch and dining">Brunch & dining</option>
-            <option value="Events and gatherings">Events & gatherings</option>
-            <option value="Interiors and design">Interiors & design</option>
-            <option value="General enquiry">Something else</option>
-          </select>
-
-          <label for="date">Preferred date (optional)</label>
-          <input id="date" name="date" type="date">
-
-          <label for="message">Tell us a little more</label>
-          <textarea id="message" name="message" rows="5"
-            placeholder="Share the details of your enquiry..." required></textarea>
-
-          <button class="button button-dark form-submit" type="submit">
-            Submit enquiry ↗
-          </button>
-
-          <p class="form-note">
-            Demonstration form only. It does not send or store your information.
-          </p>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <section class="contact-bottom">
-      <p class="eyebrow light">UNTIL THEN</p>
-      <h2>Make room for<br><i>something good.</i></h2>
-      <a class="button button-light" href="index.html">Return to the homepage ↗</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-top">
-      <a class="brand brand-footer" href="index.html">
-        <span class="brand-mark">B</span>
-        <span>BRYAN <em>PLACE</em></span>
-      </a>
-      <p>A historic spirit. A welcoming table.<br>A home for considered design.</p>
-      <div class="footer-links">
-        <a href="brunch.html">Brunch</a>
-        <a href="events.html">Gatherings</a>
-        <a href="interiors.html">Interiors</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-year></span> Bryan Place redesign concept</span>
-      <span>Independent concept · For presentation purposes only</span>
-      <a href="index.html">Back home ↑</a>
-    </div>
-  </footer>
+<script src="js/main.js" defer></script>
+<script>document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());</script>
 </body>
-</html>
+  </html>
